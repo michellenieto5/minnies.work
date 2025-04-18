@@ -18,7 +18,49 @@
     --foreground: #ededed;
   }
 }
+/* utility class for font winky */
+.winky-font {
+  font-family: 'Winky Sans', sans-serif;
+}
 
+/* globals.css */
+.winky-sans {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Regular weight */
+}
+
+.winky-sans-thin {
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 300; /* Thinner weight */
+}
+
+.winky-sans-bold {
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 700; /* Bold weight */
+}
+
+/* Animations for name  */
+@keyframes bounceColor {
+  0%, 100% {
+    color: #a855f7;
+    transform: scale(1);
+  }
+  50% {
+    color: #c084fc;
+    transform: scale(1.08);
+  }
+}
+
+.michelle-flare {
+  animation: bounceColor 1.5s ease-in-out infinite;
+  font-weight: bold;
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--background);
   color: var(--foreground);
