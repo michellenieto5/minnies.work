@@ -8,7 +8,8 @@ const nextConfig: NextConfig = {
   },
   assetPrefix: isPro ? '/minnies.work' : '',
   basePath: isPro ? '/minnies.work' : '',
-  output: 'export'
+  output: 'export',
+  trailingSlash: true
 };
 
 export default nextConfig;
