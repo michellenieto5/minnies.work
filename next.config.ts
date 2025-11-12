@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   images: {
-    unoptimized: true,
+    unoptimized: false,
   },
   assetPrefix: isPro ? '/minnies.work' : '',
   basePath: isPro ? '/minnies.work' : '',
