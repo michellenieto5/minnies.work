@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "export": "next export",
-    "postexport": "cp -a out/index.html out/404.html",
-    "deploy": "rm -rf out && next build && next export && cp -a out/index.html out/404.html && gh-pages -d out -b gh-pages"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "15.3.1",
