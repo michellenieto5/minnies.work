@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   assetPrefix: isPro ? '/minnies.work' : '',
-  basePath: isPro ? '/minnies.work' : '',
+  //basePath: isPro ? '/minnies.work' : '',
   output: 'export'
 };
 
