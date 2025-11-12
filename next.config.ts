@@ -6,9 +6,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: isPro ? '/minnies.work' : '',
   assetPrefix: isPro ? '/minnies.work' : '',
-  //basePath: isPro ? '/minnies.work' : '',
-  output: 'export'
+  output: 'export',
+  trailingSlash: true
 };
 
 export default nextConfig;

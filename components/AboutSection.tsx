@@ -1,6 +1,6 @@
 // components/AboutSection.tsx
-import TechListItem from "../components/TechListItem";
 import Image from 'next/image';
+import TechListItem from "../components/TechListItem";
 
 export default function AboutSection() {
   return (

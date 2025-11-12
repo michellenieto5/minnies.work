@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "export": "next export",
-    "deploy": "next build && next export && gh-pages -d out"
+    "postexport": "cp -a out/index.html out/404.html",
+    "deploy": "rm -rf out && next build && next export && cp -a out/index.html out/404.html && gh-pages -d out -b gh-pages"
   },
   "dependencies": {
     "next": "15.3.1",
