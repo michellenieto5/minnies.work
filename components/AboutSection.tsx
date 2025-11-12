@@ -1,6 +1,6 @@
 // components/AboutSection.tsx
 import TechListItem from "../components/TechListItem";
-import Image from 'next/image';
+//import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -12,8 +12,8 @@ export default function AboutSection() {
         {/* Image */}
         <div className="flex-1 flex justify-center">
           <img
-            src="images/mecute.jpg"
-            alt="Michelle Nieto"
+            src="/minnies.work/me.jpg"
+            alt="My Image"
             className="w-99 h-140 rrounded-none object-cover shadow-lg"
           />
         </div>
