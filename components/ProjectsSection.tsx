@@ -19,18 +19,21 @@ const projects = {
     description: "Damn Vulnerable Web Application (DVWA) is a PHP/MariaDB web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.",
     images: ["/images/dvwa.png"],
     repo: "https://github.com/michellenieto5/DVWA-report",
+    demo: "",
   },
   dentalApp: {
     title: "Dental WebApp",
     description: "Built for a local clinic to manage appointments, patients, and reports.",
     images: ["/images/adminDental.png"],
     repo: "https://github.com/michellenieto5/CS-340-Project",
+    demo: "",
   },
   budgetApp: {
     title: "BudgetApp",
     description: "An app to track income and expenses with category breakdowns and graphs.",
     images: [],
     repo: "https://github.com/michellenieto5/BudgetApp",
+    demo: "",
   },
 };
 
