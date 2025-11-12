@@ -24,7 +24,7 @@ export default function AboutSection() {
               I’m a Computer Science major at{" "}
               <span className="text-gray-400 italic">Oregon State University</span>,
               minoring in Cybersecurity. While I value secure development practices, my
-              true passion is software development — building cool things that make a
+              true passion is software development, building cool things that make a
               real impact in people's lives.
           </p>
           <p className="mt-4">
@@ -49,7 +49,7 @@ export default function AboutSection() {
           </ul>
           
           <p className="mt-4">
-          Aaaand... I’m from Colombia 🇨🇴! I love dancing, traveling, and doing things that make a difference — whether that’s coding something useful or helping out in my community.
+          Aaaand... I’m from Colombia 🇨🇴! I love dancing, traveling, and doing things that make a difference, whether that’s coding something useful or helping out in my community.
         </p>
 
         </div>
