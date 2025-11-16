@@ -3,10 +3,9 @@ export default function HeroSection() {
     return (
       <section
         id="hero"
-        className="min-h-screen flex flex-col items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: "url('/path-to-your-hero-image.jpg')" }}
+        className=" flex flex-col items-center justify-center text-center bg-cover bg-center"
       >
-        <h1 className="text-4xl sm:text-7xl font-semibold winky-font">
+        <h1 className="text-4xl sm:text-8xl font-semibold winky-font">
           Hi, <span className="michelle-flare">Michelle</span> here.
         </h1>
         <p className="text-2xl winky-sans-thin mt-5 max-w-prose">
@@ -14,8 +13,8 @@ export default function HeroSection() {
         </p>
         <div className="flex gap-10 items-center flex-col">
         <a
-        className="mt-8 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-4 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-        href="mailto:michellepnieto@gmail.com"
+        className="mt-8 rounded-full border border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-4 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+        href="https://www.linkedin.com/in/michelle-nieto-115b56229"
         target="_blank"
         rel="noopener noreferrer"
         >

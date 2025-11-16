@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #103F2E;
+  --foreground: #F5F5F5;
 }
 
 @theme inline {
@@ -12,12 +12,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 /* utility class for font winky */
 .winky-font {
   font-family: 'Winky Sans', sans-serif;
@@ -32,7 +26,7 @@
 
 .winky-sans-thin {
   font-family: "Winky Sans", sans-serif;
-  font-weight: 300; /* Thinner weight */
+  font-weight: 350; /* Thinner weight */
 }
 
 .winky-sans-bold {
@@ -43,11 +37,11 @@
 /* Animations for name  */
 @keyframes bounceColor {
   0%, 100% {
-    color: #a855f7;
+    color: #6B7556;
     transform: scale(1);
   }
   50% {
-    color: #c084fc;
+    color: hsl(150, 95%, 75%);
     transform: scale(1.08);
   }
 }
