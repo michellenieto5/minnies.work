@@ -19,7 +19,7 @@ export default function AboutSection() {
         </div>
         {/* Text Content */}
         <div className="flex-1 text-center md:text-center">
-          <h2 className="text-4xl sm:text-5xl font-semibold mb-4 winky-sans">About Me</h2>
+          <h2 className="text-4xl sm:text-5xl font-semibold mb-4 winky-sans">--- /** About Me */ ---</h2>
           <p className="text-lg text-white-700 winky-sans-thin">
               I’m a Computer Science major at{" "}
               <span className="text-gray-400 italic winky-sans">Oregon State University</span>,
