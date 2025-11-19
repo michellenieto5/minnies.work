@@ -37,9 +37,39 @@ export default function TreasureHuntPage() {
         </p>
       </header>
 
-      {/* Image slider */}
-      <section className="space-y-3">
-      <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-lg">
+
+      {/* description */}
+      <section className="grid gap-8 md: grid-cols-2 items-start">
+        <div className="space-y-6">
+        <div className="space-y-3">
+          <h2 className="text-2xl font-semibold">Overview - Goals</h2>
+          <p className="text-lg leading-relaxed">
+          A location-based treasure hunt game where players receive real-world clues, walk to the physical location, and use GPS to verify whether they’ve found the correct spot. The app tracks elapsed time, manages multiple clues, and guides the user through start, clue, hint, success, failure, and completion screens.
+          </p>
+        </div>
+
+      {/* Features */}
+      <div className="space-y-3">
+        <h2 className="text-2xl font-semibold">Key Features</h2>
+        <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
+        <li> <strong>Location-based gameplay</strong> Uses the device’s GPS to check if the user is within a given distance of each clue’s coordinates.</li>
+          <li> <strong>Multi-screen flow with navigation: </strong> Start, Clue, Hint, Found, Not Found, and Completed screens managed via a Compose NavHost.</li>
+          <li><strong>Clue model and game logic: </strong>Clues are defined with text, hint, and geo-coordinates; a ViewModel manages the current clue and transitions.</li>
+          <li><strong>Distance calculation:</strong> Uses a Geo model and haversine formula to compute distance from the user to the clue.</li>
+          <li><strong>Timer:</strong> Tracks and displays total elapsed time from the start of the game until completion.</li>
+        </ul>
+      </div>
+
+      {/*role */}
+      <div className="space-y-3">
+      <h2 className="text-2xl font-semibold">My Role & Takeaways</h2>
+      <p className="text-base leading-relaxed">
+      I built the entire treasure hunt application myself, including the location logic, ViewModel structure, navigation flow, and all Jetpack Compose UI screens. I especially enjoyed this project because it was the first time I created my own reusable functions and then connected them to real in-app behavior, such as checking the user’s distance from a clue or progressing through the game stages. It was also my first experience working with device-level security features like requesting location permissions and safely accessing GPS data, which made the project both challenging and exciting. Building the UI around a state-driven ViewModel taught me how clean architecture and dynamic updates come together in a real Android app.
+      </p>
+      </div>
+      </div>
+
+      <div className="relative max-h-[700px] aspect-[2/4] overflow-hidden rounded-2xl shadow-lg">
           <Image
             src={TreasureHuntImages[currentIndex]}
             alt={`Treasure Hunt App screenshot ${currentIndex + 1}`}
@@ -76,35 +106,7 @@ export default function TreasureHuntPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* description */}
-      <section className="space-y-3">
-        <h2 className="text-2xl font-semibold">Overview - Goals</h2>
-        <p className="text-lg leading-relaxed">
-        A location-based treasure hunt game where players receive real-world clues, walk to the physical location, and use GPS to verify whether they’ve found the correct spot. The app tracks elapsed time, manages multiple clues, and guides the user through start, clue, hint, success, failure, and completion screens.
-        </p>
-      </section>
-
-      {/* Features */}
-      <section className="space-y-3">
-        <h2 className="text-2xl font-semibold">Key Features</h2>
-        <ul className="list-disc list-inside space-y-1 text-base leading-relaxed">
-        <li> <strong>Location-based gameplay</strong> Uses the device’s GPS to check if the user is within a given distance of each clue’s coordinates.</li>
-          <li> <strong>Multi-screen flow with navigation: </strong> Start, Clue, Hint, Found, Not Found, and Completed screens managed via a Compose NavHost.</li>
-          <li><strong>Clue model and game logic: </strong>Clues are defined with text, hint, and geo-coordinates; a ViewModel manages the current clue and transitions.</li>
-          <li><strong>Distance calculation:</strong> Uses a Geo model and haversine formula to compute distance from the user to the clue.</li>
-          <li><strong>Timer:</strong> Tracks and displays total elapsed time from the start of the game until completion.</li>
-        </ul>
-      </section>
-
-      {/*role */}
-      <section className="space-y-3">
-      <h2 className="text-2xl font-semibold">My Role & Takeaways</h2>
-      <p className="text-base leading-relaxed">
-      I built the entire treasure hunt application myself, including the location logic, ViewModel structure, navigation flow, and all Jetpack Compose UI screens. I especially enjoyed this project because it was the first time I created my own reusable functions and then connected them to real in-app behavior, such as checking the user’s distance from a clue or progressing through the game stages. It was also my first experience working with device-level security features like requesting location permissions and safely accessing GPS data, which made the project both challenging and exciting. Building the UI around a state-driven ViewModel taught me how clean architecture and dynamic updates come together in a real Android app.
-      </p>
-    </section>
+        </section>
 
     </main>
   );
