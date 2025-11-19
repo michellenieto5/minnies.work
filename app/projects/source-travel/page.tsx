@@ -35,6 +35,14 @@ export default function SourceTravelPage() {
         <p className="">
           Technologies: Next.js, React, JWT, Prisma
         </p>
+        <a
+            href="https://travel-planner.osu.eschers.work"
+            target="_blank"
+            className="inline-block mt-2 mt-8 rounded-full border border-transparent transition-colors bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base px-4 py-2 rounded-lg transition"
+          >
+            Live App here →
+          </a>
+
       </header>
 
       {/* Image slider */}

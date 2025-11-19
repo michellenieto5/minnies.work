@@ -30,11 +30,19 @@ export default function TreasureHuntPage() {
       <header>
         <h1 className="text-4xl font-bold mb-4">Treasure Hunt Mobile App</h1>
 
-        <p className="mb-1">Year: 2024</p>
+        <p className="mb-1">Year: 2025</p>
         <p className="mb-1">Role: Developer</p>
         <p className="">
           Technologies: Kotlin - Andriod Studio
         </p>
+        <a
+            href="https://github.com/michellenieto5/Treasure-Hunt"
+            target="_blank"
+            className="inline-block mt-2 mt-8 rounded-full border border-transparent transition-colors bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base px-4 py-2 rounded-lg transition"
+          >
+            Code here →
+          </a>
+
       </header>
 
 

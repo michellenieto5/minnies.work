@@ -33,6 +33,13 @@ export default function DentalAppPage() {
         <p className="">
           Technologies: Flask, MySQL, Python, HTML/CSS
         </p>
+        <a
+            href="https://github.com/michellenieto5/CS-340-Project"
+            target="_blank"
+            className="inline-block mt-2 mt-8 rounded-full border border-transparent transition-colors bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base px-4 py-2 rounded-lg transition"
+          >
+            Code here →
+          </a>
       </header>
 
       {/* Image slider */}
